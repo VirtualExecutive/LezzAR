@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LezzAR", "LezzAR\LezzAR.csproj", "{2AE71529-FB65-4E30-ABDE-C57B85BD37F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LezzAR", "LezzAR\LezzAR.csproj", "{8E74B00D-898E-4884-A4AB-BC86ED826562}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2AE71529-FB65-4E30-ABDE-C57B85BD37F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AE71529-FB65-4E30-ABDE-C57B85BD37F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AE71529-FB65-4E30-ABDE-C57B85BD37F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AE71529-FB65-4E30-ABDE-C57B85BD37F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E74B00D-898E-4884-A4AB-BC86ED826562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E74B00D-898E-4884-A4AB-BC86ED826562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E74B00D-898E-4884-A4AB-BC86ED826562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E74B00D-898E-4884-A4AB-BC86ED826562}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {570C70C5-C03A-4265-B115-99CA13B759DC}
+		SolutionGuid = {35A354C1-0403-4229-828D-D3ABE68CFFC0}
 	EndGlobalSection
 EndGlobal
