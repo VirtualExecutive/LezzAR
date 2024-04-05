@@ -1,0 +1,1 @@
+adb shell am start -a android.intent.action.VIEW -d "exp://10.196.19.66:8081/--/Home" host.exp.exponent
