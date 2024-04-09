@@ -1,9 +1,19 @@
-LezzAR.Classes.MySQL.Connect();
+using Microsoft.EntityFrameworkCore;
+using MySql.EntityFrameworkCore.Extensions;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySQL(connectionString));
+
+
 builder.Services.AddRazorPages();
+builder.Services.AddControllers();
+
 
 var app = builder.Build();
 
@@ -23,5 +33,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers(); // Web API rotalarý
+    endpoints.MapDefaultControllerRoute(); // MVC rotalarý
+});
 
 app.Run();

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, LogBox} from 'react-native';
 import { useFonts } from 'expo-font';
 
 
-import Screen from "./src/screens/ScreenIndex";
+import Screen from "./src/screens/ScreenIndex.tsx";
 
 
 LogBox.ignoreAllLogs();

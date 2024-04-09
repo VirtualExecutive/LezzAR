@@ -1,35 +1,17 @@
 import React from 'react'
-import {View, Text,TextInput, Image,Button} from "react-native"
-import Styles from  "../styles"
-import styles from "./styles"
-import ColorsTheme from "../../Theme/color"
-import signTheme from '../../Theme/sign'
-import PhoneSignBox from "../../components/SignScreen/PhoneSignBox/Index"
-import PhoneSignText from "../../components/SignScreen/PhoneSignText/Index"
+import  {View,Text} from "react-native" 
+import ScreenStyles from "../styles"
+import Database from   "../../scripts/database"
 
-
-
-const  SignIndex = ({ navigation}:any) => {
-    const handleLogin = () => {
-        
-      }
-
+const SignIndex = ({navigation}:any) => {
+    Database
     return(
-        <View style={{ flex: 1}}>
+        <View style={ScreenStyles.center}>
+            <Text >Testt</Text>
+        </View>
 
-        <View style={[Styles.screen,signTheme.background, Styles.center]}>
-            <View style={styles.center}>
-                <PhoneSignText/>
-                <PhoneSignBox />
-                <Button
-                    title='Giriş Yap'
-                    color="red"
-                    onPress={() => navigation.navigate("Home")}
-                    />
-            </View>
-        </View>
-        </View>
     )
+
 }
 
 export default SignIndex

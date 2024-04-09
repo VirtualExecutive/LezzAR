@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, StatusBar } from 'react-native';
 import notificationBarTheme from '../Theme/notificationBar';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -26,14 +26,12 @@ function Screen() {
     }
     return (
         <View >
-            <View style={styles.header}>
-                <Text style={styles.headerTitle}>LezzAR</Text>
-            </View>
+            <StatusBar backgroundColor="red"></StatusBar>
             <View style={styles.container}>
                 <NavigationContainer linking={linking}>
                     <Stack.Navigator initialRouteName="Sign">
                         <Stack.Screen name="Sign" component={SignScreen} options={{ headerShown: false }} />
-                        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+                        {/* <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} /> */}
                     </Stack.Navigator>
                 </NavigationContainer>
             </View>
@@ -43,7 +41,7 @@ function Screen() {
 
 const styles = StyleSheet.create({
     header: {
-        height: height * 0.08,
+        height: height * 0.03,
         backgroundColor: notificationBarTheme.Theme.backgroundColor,
         alignItems: "center",
         justifyContent: "flex-end",
@@ -55,7 +53,7 @@ const styles = StyleSheet.create({
         color: "white"
     },
     container: {
-        height: height * 0.92,
+        height: height * 0.97,
         backgroundColor: "white"
     },
 });

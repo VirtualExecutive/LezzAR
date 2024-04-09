@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LezzAR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5cdf3bed968acd7ab6fb9eb230d24d4969673a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b211bf788fe849b163e7695f85699e209f6e53d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LezzAR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LezzAR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
