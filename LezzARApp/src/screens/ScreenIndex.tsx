@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import * as Linking from "expo-linking";
 
 import SignScreen from "./SignScreen/SignIndex"
+import SignPhoneScreen from "./SignPhoneScreen/SignPhoneIndex"
 import HomeScreen from './HomeScreen/HomeIndex';
 
 const Stack = createStackNavigator();
@@ -31,6 +32,7 @@ function Screen() {
                 <NavigationContainer linking={linking}>
                     <Stack.Navigator initialRouteName="Sign">
                         <Stack.Screen name="Sign" component={SignScreen} options={{ headerShown: false }} />
+                        <Stack.Screen name="SignPhone" component={SignPhoneScreen} options={{ headerShown: false }} />
                         {/* <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} /> */}
                     </Stack.Navigator>
                 </NavigationContainer>

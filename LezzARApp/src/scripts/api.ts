@@ -1,27 +1,17 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://10.0.2.2:5233'; // API'nin temel URL'si
+const BASE_URL = 'https://lezzar.store';
 
-// Örnek bir API çağrısı: Tüm ürünleri getir
-export const fetchProducts = async () => {
+export const fetchAPI = async (endpoint: any) => {
+  const url =`${BASE_URL}/api/${endpoint}`
   try {
-    const response = await axios.get(`${BASE_URL}/api/products`);
+    const response = await axios.get(url);
     return response.data;
   } catch (error) {
     console.error('Error fetching products:', error);
+    console.debug(`URL: ${url}`);
     throw error;
   }
 };
 
-// Örnek bir API çağrısı: Yeni ürün ekle
-export const addProduct = async (newProduct: any) => {
-  try {
-    const response = await axios.post(`${BASE_URL}/api/products`, newProduct);
-    return response.data;
-  } catch (error) {
-    console.error('Error adding product:', error);
-    throw error;
-  }
-};
 
-// Diğer API çağrıları buraya eklenebilir

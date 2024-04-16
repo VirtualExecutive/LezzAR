@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, LogBox} from 'react-native';
 import { useFonts } from 'expo-font';
 
-
 import Screen from "./src/screens/ScreenIndex.tsx";
 
 
