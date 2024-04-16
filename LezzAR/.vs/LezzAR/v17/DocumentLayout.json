@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\controllers\\accesscontrolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\controllers\\accesscontrolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\accesscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\accesscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\classes\\mysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\classes\\mysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,117 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccessControlController.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\AccessControlController.cs",
+              "RelativeDocumentMoniker": "LezzAR\\Controllers\\AccessControlController.cs",
+              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\AccessControlController.cs",
+              "RelativeToolTip": "LezzAR\\Controllers\\AccessControlController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T13:37:11.08Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\Products.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Model\\Products.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\Products.cs",
-              "RelativeToolTip": "LezzAR\\Model\\Products.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T13:55:04.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "LezzAR\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T13:53:37.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Index.cshtml",
-              "RelativeToolTip": "LezzAR\\Pages\\Index.cshtml",
+              "Title": "AccessControl.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AccessControl.cs",
+              "RelativeDocumentMoniker": "LezzAR\\Model\\AccessControl.cs",
+              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AccessControl.cs",
+              "RelativeToolTip": "LezzAR\\Model\\AccessControl.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T13:41:39.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Model\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AppDbContext.cs",
-              "RelativeToolTip": "LezzAR\\Model\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T13:29:02.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\appsettings.json",
-              "RelativeDocumentMoniker": "LezzAR\\appsettings.json",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\appsettings.json",
-              "RelativeToolTip": "LezzAR\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-09T13:05:18.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "LezzAR\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T12:05:10.099Z",
+              "WhenOpened": "2024-04-16T13:37:06.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Program.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Program.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Program.cs",
-              "RelativeToolTip": "LezzAR\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAkAAAA",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "LezzAR\\Model\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AppDbContext.cs",
+              "RelativeToolTip": "LezzAR\\Model\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T11:53:58.997Z",
+              "WhenOpened": "2024-04-16T13:36:59.063Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MySQL.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Classes\\MySQL.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Classes\\MySQL.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Classes\\MySQL.cs",
-              "RelativeToolTip": "LezzAR\\Classes\\MySQL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAACOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T11:48:17.672Z"
             }
           ]
         }

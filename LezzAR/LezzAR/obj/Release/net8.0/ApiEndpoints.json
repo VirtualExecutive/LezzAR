@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "LezzAR.Controllers.AccessControlController",
+    "Method": "Get",
+    "RelativePath": "api/AccessControl",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LezzAR.Controllers.AccessControlController",
+    "Method": "GetAccessState",
+    "RelativePath": "api/AccessControl/{accessName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

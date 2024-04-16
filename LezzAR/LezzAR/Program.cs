@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<LezzAR.Models.ApplicationDbContext>(options =>
     options.UseMySQL(connectionString));
 
 
@@ -23,8 +23,10 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+app.UseDefaultFiles();
 app.UseStaticFiles();
+app.UseForwardedHeaders();
 
 app.UseRouting();
 
@@ -37,5 +39,6 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers(); // Web API rotalarý
     endpoints.MapDefaultControllerRoute(); // MVC rotalarý
 });
+
 
 app.Run();
