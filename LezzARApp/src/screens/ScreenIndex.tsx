@@ -33,7 +33,7 @@ function Screen() {
                     <Stack.Navigator initialRouteName="Sign">
                         <Stack.Screen name="Sign" component={SignScreen} options={{ headerShown: false }} />
                         <Stack.Screen name="SignPhone" component={SignPhoneScreen} options={{ headerShown: false }} />
-                        {/* <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} /> */}
+                        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
                     </Stack.Navigator>
                 </NavigationContainer>
             </View>
@@ -42,18 +42,6 @@ function Screen() {
 }
 
 const styles = StyleSheet.create({
-    header: {
-        height: height * 0.03,
-        backgroundColor: notificationBarTheme.Theme.backgroundColor,
-        alignItems: "center",
-        justifyContent: "flex-end",
-    },
-    headerTitle: {
-        marginBottom: 3,
-        fontFamily: "Rubik-Bold",
-        fontSize: 20,
-        color: "white"
-    },
     container: {
         height: height * 0.97,
         backgroundColor: "white"
