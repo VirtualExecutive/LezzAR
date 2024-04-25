@@ -9,6 +9,7 @@ import * as Linking from "expo-linking";
 import SignScreen from "./SignScreen/SignIndex"
 import SignPhoneScreen from "./SignPhoneScreen/SignPhoneIndex"
 import HomeScreen from './HomeScreen/HomeIndex';
+import React from 'react';
 
 const Stack = createStackNavigator();
 const { height } = Dimensions.get('window')

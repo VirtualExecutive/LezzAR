@@ -1,9 +1,10 @@
 {
   "expo": {
     "name": "LezzAR",
+    "description":"Türkiyenin AR yemek sipariş uygulaması",
     "scheme": "lezzar",
     "slug": "LezzARApp",
-    "version": "1.0.0",
+    "version": "0.2.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,7 +24,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.LezzARApp"
+      "package": "com.cimga.lezzar"
     },
     "web": {
       "favicon": "./assets/favicon.png"

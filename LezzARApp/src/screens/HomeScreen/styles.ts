@@ -14,6 +14,7 @@ const homeStyles = StyleSheet.create({
         borderColor:"#ff8080",
         borderStyle:"solid",
         borderRadius:15,
+        backgroundColor:"white"
     },
     shopImage:{
         width:120,

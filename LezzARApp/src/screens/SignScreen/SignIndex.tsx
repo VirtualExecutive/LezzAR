@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { View, Text, Button,Alert} from "react-native"
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 import ScreenStyles from "../styles"
 import SignStyles from "./styles"
 import { fetchAPI } from "../../scripts/api"
@@ -26,8 +28,24 @@ const SignIndex = ({ navigation }: any) => {
 
         const checkAccessEnabledMobilApp = async () => {
             const data = await fetchAPI("accessControl/MobilApp");
-            console.log("AccesControl/MobilApp: "+data.state)
+            console.log("AccessControl/MobilApp: "+data.state)
             return data.state
+        } 
+
+        const navigateSignPhoneScreen = async () => {
+            console.log("Navigating SignPhoneScreen")
+            const loadPhoneNumber = async () => {
+                const savedPhoneNumber = await AsyncStorage.getItem('phoneNumber');
+                if (savedPhoneNumber) {
+                    console.log(`Telefon numarası: ${savedPhoneNumber}`)
+                    navigation.navigate("Home")
+                }
+                else{
+                    navigation.navigate("SignPhone")
+                }
+            };
+    
+            loadPhoneNumber();
         }
 
         const asyncStart = async () => {
@@ -37,7 +55,7 @@ const SignIndex = ({ navigation }: any) => {
                 await showAlertMobilApp();
             }
             else{
-                navigation.navigate("SignPhone")
+                await navigateSignPhoneScreen();
             }
         }
         
