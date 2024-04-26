@@ -31,7 +31,7 @@ const SignPhoneIndex = ({ navigation }: any) => {
                 viewPhoneNumber = `${viewPhoneNumber}`;
                 break;
             case undefined:
-                Alert.alert("Telefon Numarınızı Giriniz","Telfon numaranızı girmeniz gerekmektedir.");
+                Alert.alert("Telefon Numarınızı Giriniz","Telefon numaranızı girmeniz gerekmektedir.");
                 return;
             default:    
                 viewPhoneNumber = `+90${viewPhoneNumber}`;

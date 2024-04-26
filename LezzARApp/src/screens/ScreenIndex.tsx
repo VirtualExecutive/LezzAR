@@ -9,6 +9,7 @@ import * as Linking from "expo-linking";
 import SignScreen from "./SignScreen/SignIndex"
 import SignPhoneScreen from "./SignPhoneScreen/SignPhoneIndex"
 import HomeScreen from './HomeScreen/HomeIndex';
+import AddressScreen from './AddressScreen/AddressIndex';
 import React from 'react';
 
 const Stack = createStackNavigator();
@@ -27,18 +28,18 @@ function Screen() {
         }
     }
     return (
-        <View >
+        <>
             <StatusBar backgroundColor="red"></StatusBar>
-            <View style={styles.container}>
-                <NavigationContainer linking={linking}>
-                    <Stack.Navigator initialRouteName="Sign">
-                        <Stack.Screen name="Sign" component={SignScreen} options={{ headerShown: false }} />
-                        <Stack.Screen name="SignPhone" component={SignPhoneScreen} options={{ headerShown: false }} />
-                        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-                    </Stack.Navigator>
-                </NavigationContainer>
-            </View>
-        </View>
+            
+            <NavigationContainer linking={linking}>
+                <Stack.Navigator initialRouteName="Sign">
+                    <Stack.Screen name="Sign" component={SignScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="SignPhone" component={SignPhoneScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="Address" component={AddressScreen} options={{ headerShown: false }} />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </>
     );
 }
 

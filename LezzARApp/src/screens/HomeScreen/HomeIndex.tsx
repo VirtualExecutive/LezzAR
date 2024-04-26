@@ -5,7 +5,7 @@ import Styles from  "../styles"
 import styles from "./styles"
 import ColorsTheme from "../../Theme/color"
 import homeTheme from '../../Theme/home'
-import AddressBox from "../../components/Address/Index"
+import AddressMenuBar from "../../components/Address/AddressMenuBar/Index"
 
 
 
@@ -13,7 +13,7 @@ const  HomeIndex = ({navigation}:any) => {
     return(
         <View style={{ flex: 1}}>
 
-            <AddressBox/>
+            <AddressMenuBar navigation={navigation}/>
 
 
             <View style={styles.shopLister}>
