@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "LezzAR",
-    "description":"Türkiyenin AR yemek sipariş uygulaması",
+    "description": "Türkiyenin AR yemek sipariş uygulaması",
     "scheme": "lezzar",
     "slug": "LezzARApp",
     "version": "0.2.2",
@@ -28,6 +28,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "04e196e2-0054-467b-acc2-da7de6cbcaf1"
+      }
     }
   }
 }
