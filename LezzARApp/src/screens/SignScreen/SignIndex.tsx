@@ -10,6 +10,7 @@ import { fetchAPI } from "../../scripts/api"
 const SignIndex = ({ navigation }: any) => {
     const asyncStart = async () => {
         console.debug("asyncStart");
+        checkStorageData();
         const isEnabled = await isAccessEnabledMobilApp();
         if (!isEnabled) {
             await showAlertMobilApp();
@@ -23,9 +24,10 @@ const SignIndex = ({ navigation }: any) => {
             asyncStart();
         }, [])
     );
+
     const checkStorageData = async () =>{
-        if ( await AsyncStorage.getItem("AddressDataBase")) await AsyncStorage.setItem("AddressDataBase","{}")
-        
+        if (!(await AsyncStorage.getItem("AddressID"))) await AsyncStorage.setItem("AddressID","-1")
+        if (!(await AsyncStorage.getItem("Token"))) await AsyncStorage.setItem("Token","e7697428-0480-11ef-aaba-287f07a526cf")
     }
 
     const showAlertMobilApp = async () => {

@@ -4,6 +4,7 @@ import styles from "./styles"
 import ColorsTheme from '../../../Theme/color'
 import { Feather } from '@expo/vector-icons';
 
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function index({navigation,title,addressInfo,addressID}:any) {
 
@@ -11,8 +12,9 @@ function index({navigation,title,addressInfo,addressID}:any) {
 
     }
 
-    const onClickAddressBox = () => {
-
+    const onClickAddressBox = async () => {
+        await AsyncStorage.setItem("AddressID",addressID.toString())
+        navigation.navigate("Home")
     };
     const onClickPlace = () => {
         navigation.navigate("Address")

@@ -11,11 +11,17 @@ namespace LezzAR.Models
         }
 
         public DbSet<AccessControl> AccessControl { get; set; }
+        public DbSet<Accounts> Accounts { get; set; }
+        public DbSet<Addresses> Addresses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AccessControl>()
-                .HasKey(ac => ac.AccessID);  // AccessID'yi birincil anahtar olarak ayarlar
+                .HasKey(ac => ac.AccessID);
+            modelBuilder.Entity<Accounts>()
+                .HasKey(ac => ac.AccountID);
+            modelBuilder.Entity<Addresses>()
+                .HasKey(ac => ac.AddressID);
         }
     }
 }

@@ -1,15 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using LezzAR.Models; // Veritabanı modellerinizi içeren namespace
+using LezzAR.Models;
 
 namespace LezzAR.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class AccessControlController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -26,7 +22,7 @@ namespace LezzAR.Controllers
         {
             return true;
         }
-        // GET api/accessControl/{accessName}
+        // GET: api/accessControl/{accessName}
         [HttpGet("{accessName}")]
         public async Task<IActionResult> GetAccessState(string accessName)
         {

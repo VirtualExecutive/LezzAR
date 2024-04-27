@@ -5,8 +5,24 @@ import ColorsTheme from '../../../Theme/color'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
+import { fetchAPI } from '../../../scripts/api';
 
 
+interface Address {
+    accountID: number;
+    addressID: number;
+    sehir: string;
+    ilce: string;
+    mahalle: string;
+    caddeSokak: string;
+    kat:string;
+    binaNo: string;
+    binaAdi: string;
+    adresTarifi: string;
+    title: string;
+    enlem: number;
+    boylam: number;
+}
 
 function index({navigation}:any) {
     const [title, setTitle] = useState("")
@@ -14,14 +30,30 @@ function index({navigation}:any) {
     const [ID, setID] = useState("")
  
     const SetCurrentAddress = async () => {
-        let addressID = await AsyncStorage.getItem("AddressID")
-        if(addressID){
+        const addressID = await AsyncStorage.getItem("AddressID")
+        const token = await AsyncStorage.getItem("Token");
 
+        if (!addressID) {
+            console.error("AddressID is null");
+            return; 
+        }
+        
+        if(addressID!="-1"){
+            let addresses: Address[] =  await fetchAPI(`account/getuseraddresses?token=${token}`)
+            addresses.forEach((element: Address) => {
+                if(element.addressID==parseInt(addressID)){
+                    console.log(`${element.sehir} ${element.ilce} ${element.mahalle} ${element.caddeSokak} ${element.binaNo} ${element.binaAdi} ${element.title} ${element.adresTarifi} ${element.enlem} ${element.boylam}`)
+                    setTitle(element.title)
+                    setInfo(`${element.sehir}, ${element.ilce}, ${element.mahalle}, ${element.caddeSokak}, ${element.binaAdi} No:${element.binaNo}`)
+                    setID(element.addressID.toString())
+                }
+            });
         }
         else{
             setTitle("Adres Ekle")
             setInfo("Türkiye")
-            setID("")
+            setID("-1")
+            await AsyncStorage.setItem("AddressID","0")
         }
     }
 

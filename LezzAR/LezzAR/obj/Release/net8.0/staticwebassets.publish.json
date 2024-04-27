@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AKpmio8omBNeTqzYveRKjKz7sovY601krP99kaWzOfI=",
+  "Hash": "YT9inCVsMEDXLaM/qgx76MB/A9TwpavSAf1hv2au+Tw=",
   "Source": "LezzAR",
   "BasePath": "_content/LezzAR",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\release\\net8.0\\scopedcss\\bundle\\LezzAR.styles.css",
+      "Identity": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\Release\\net8.0\\scopedcss\\bundle\\LezzAR.styles.css",
       "SourceId": "LezzAR",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\release\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\Release\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/LezzAR",
       "RelativePath": "LezzAR.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\release\\net8.0\\scopedcss\\bundle\\LezzAR.styles.css"
+      "OriginalItemSpec": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\Release\\net8.0\\scopedcss\\bundle\\LezzAR.styles.css"
     },
     {
-      "Identity": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\release\\net8.0\\scopedcss\\projectbundle\\LezzAR.bundle.scp.css",
+      "Identity": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\LezzAR.bundle.scp.css",
       "SourceId": "LezzAR",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\release\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/LezzAR",
       "RelativePath": "LezzAR.bundle.scp.css",
       "AssetKind": "All",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\release\\net8.0\\scopedcss\\projectbundle\\LezzAR.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\LezzAR.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\site.css",

@@ -7,6 +7,7 @@ import Styles from  "../styles"
 import styles from "./styles"
 import ColorsTheme from "../../Theme/color"
 import homeTheme from '../../Theme/home'
+import { ScrollView } from 'react-native-gesture-handler';
 
 
 
@@ -20,7 +21,12 @@ const  AddressAddIndex = ({navigation}:any) => {
         },[])
     );
 
-    return(<></>
+    return(
+        <>
+        <ScrollView style={{ flex: 1}}>
+            <TextInput>Test</TextInput>
+        </ScrollView>
+        </>
     )
 }
 

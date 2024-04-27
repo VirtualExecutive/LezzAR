@@ -6,6 +6,6 @@
         public string? AccessName { get; set; }
         public bool IsAccessEnabled { get; set; }
         public DateTime LastChanged { get; set; }
-        public string? Details { get; set; } // JSON string olarak saklanacak
+        public string? Details { get; set; } //JSON
     }
 }
