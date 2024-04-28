@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LezzAR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e86175dd7426a3a5986e92ad796dfb2e4e42f0ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7475d890264c39b032033d69387c2882320c33e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("LezzAR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LezzAR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

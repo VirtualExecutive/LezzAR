@@ -1,10 +1,12 @@
 html {
   font-size: 14px;
+  font-family: Rubik
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+    font-family:Rubik
   }
 }
 
@@ -18,5 +20,18 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+}
+
+* {
+    font-family: Rubik;
+}
+
+
+
+.heightAuto {
+    height: auto;
+}
+
+.heightVH {
+    height: 100vh;
 }

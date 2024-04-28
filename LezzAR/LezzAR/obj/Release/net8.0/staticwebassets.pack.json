@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\LezzAR.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\SignPhone.css",
+      "PackagePath": "staticwebassets\\css\\SignPhone.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\centerDiv.css",
+      "PackagePath": "staticwebassets\\css\\centerDiv.css"
+    },
+    {
       "Id": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

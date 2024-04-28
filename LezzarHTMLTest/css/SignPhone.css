@@ -1,0 +1,61 @@
+
+body{
+    background-color: #f33;
+}
+#inputPhoneBox{
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#inputPhoneBox > label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#inputPhoneBox > input{
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 7px;
+    border: 0 solid white;
+    border-bottom: 2px solid red;
+    
+}
+#inputPhoneBox > input:focus{
+    outline: none;
+    
+}
+
+#inputPhoneBox > button{
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 0px solid white;
+    border-radius: 5px;
+    background-color: #f44;
+    color: white;
+}
+
+#inputPhoneBox > button:hover{
+    background-color: #f00;
+}
+
+#Sign{
+    color: white;
+    font-size: 128px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+#inputPhoneBox{
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+#inputPhoneBox:hover, #inputPhoneBox:focus{
+    box-shadow: 16px 20px 5px rgba(0, 0, 0, 0.3);
+}

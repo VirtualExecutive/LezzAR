@@ -1,0 +1,16 @@
+* {
+    font-family: Rubik;
+}
+
+
+body{
+    margin: 0;
+}
+
+.heightAuto{
+    height: auto;
+}
+
+.heightVH{
+    height: 100vh;
+}

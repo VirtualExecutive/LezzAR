@@ -1,0 +1,11 @@
+.centerDivSelf {
+    padding: 20px;
+    /* box-shadow: 16px 20px 5px rgba(0, 0, 0, 0.3); */
+    border-radius: 8px; 
+}
+
+.centerDivContent {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}

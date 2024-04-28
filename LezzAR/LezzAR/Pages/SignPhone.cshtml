@@ -1,0 +1,21 @@
+﻿@page
+@model LezzAR.Pages.SignPhoneModel
+@{
+	ViewData["Title"] = "Lezzar - Telefon Numarası";
+    <link rel="stylesheet" href="~/css/centerDiv.css" />
+    <link rel="stylesheet" href="/css/SignPhone.css">
+}
+<body class="centerDivContent heightVH">
+    <div style="flex-direction: column;">
+        <a id="Sign">LezzAR</a>
+        <div class="centerDivContent heightAuto">
+            <div id="inputPhoneBox" class="centerDivSelf" style="background-color: white;">
+                <label for="phone">Telefon Numaranızı Girin:</label>
+                <br>
+                <input type="tel" id="phone" name="phone" placeholder="+90 (500) 000 00 00">
+                <br>
+                <button type="submit">Gönder</button>
+            </div>
+        </div>
+    </div>
+</body>
