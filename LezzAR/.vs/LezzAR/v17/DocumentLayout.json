@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\wwwroot\\css\\signphone.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\wwwroot\\css\\signphone.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\signphone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "LezzAR\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -114,12 +114,11 @@
               "RelativeToolTip": "LezzAR\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T14:25:12.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T14:25:12.34Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SignPhone.css",
               "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\SignPhone.css",
               "RelativeDocumentMoniker": "LezzAR\\wwwroot\\css\\SignPhone.css",
@@ -127,12 +126,11 @@
               "RelativeToolTip": "LezzAR\\wwwroot\\css\\SignPhone.css",
               "ViewState": "AQIAABUAAAAAAAAAAAAAAD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-28T14:02:03.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T14:02:03.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "centerDiv.css",
               "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\centerDiv.css",
               "RelativeDocumentMoniker": "LezzAR\\wwwroot\\css\\centerDiv.css",
@@ -140,18 +138,17 @@
               "RelativeToolTip": "LezzAR\\wwwroot\\css\\centerDiv.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-28T12:38:49.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:38:49.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "LezzAR\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\site.css",
               "RelativeToolTip": "LezzAR\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-28T12:34:40.29Z",
               "EditorCaption": ""
@@ -164,7 +161,7 @@
               "RelativeDocumentMoniker": "LezzAR\\Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "LezzAR\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB8AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-28T12:11:19.677Z",
               "EditorCaption": ""
@@ -179,8 +176,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T12:11:15.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:11:15.896Z"
             },
             {
               "$type": "Document",
@@ -192,8 +188,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\_ViewStart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T12:11:13.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:11:13.763Z"
             },
             {
               "$type": "Document",
@@ -205,8 +200,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\Error.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T12:03:07.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:03:07.718Z"
             },
             {
               "$type": "Document",
@@ -218,8 +212,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\SignPhone.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T12:02:54.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:02:54.306Z"
             },
             {
               "$type": "Document",
@@ -231,8 +224,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\SignPhone.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T12:02:51.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:02:51.312Z"
             },
             {
               "$type": "Document",
@@ -244,8 +236,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\Index.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T12:02:19.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:02:19.007Z"
             },
             {
               "$type": "Document",
@@ -257,8 +248,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\Privacy.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T12:00:08.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:00:08.212Z"
             },
             {
               "$type": "Document",
@@ -270,8 +260,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\Error.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T12:00:04.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:00:04.208Z"
             },
             {
               "$type": "Document",
@@ -283,8 +272,7 @@
               "RelativeToolTip": "LezzAR\\Pages\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T11:58:52.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T11:58:52.093Z"
             },
             {
               "$type": "Document",
@@ -332,8 +320,7 @@
               "RelativeToolTip": "LezzAR\\Controllers\\AccountController.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAA8wBgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T10:36:33.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-27T10:36:33.347Z"
             },
             {
               "$type": "Document",
