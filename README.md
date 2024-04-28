@@ -3,3 +3,5 @@
 [Trello](https://trello.com/b/1592n1i8/lezzar-project-management)
 
 [Gantt Şeması](https://docs.google.com/spreadsheets/d/1gnjZdKAzyBzLWhncWz66jLo9wMhTEyRoKHVcmsQBVUc/edit#gid=1978642551)
+
+https://lezzar.store/
