@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/site.css">
+        <link rel="stylesheet" href="/css/centerDiv.css">
+        <link rel="stylesheet" href="/css/SignIn.css">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="20912362805-l2stv66i48v98l9e0h04ur1et6au8em0.apps.googleusercontent.com">
+    </head>
+    <body class="centerDivContent heightVH">
+        <div style="flex-direction: column;">
+            <a id="Sign">LezzAR</a>
+            <div class="centerDivContent heightAuto">
+                <div id="emailContainer" class="centerDivSelf">
+                    <label for="phone">E-Mailinizi Giriniz:</label>
+                        <br>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <button  type="submit" onclick="savePhoneAndRedirect()">Gönder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function savePhoneAndRedirect(){
+                var phone = document.getElementById("email").value;
+
+                localStorage.setItem("email",phone);
+
+                window.location.href = "Home.html"
+            }
+        </script>
+    </body>
+</html>
