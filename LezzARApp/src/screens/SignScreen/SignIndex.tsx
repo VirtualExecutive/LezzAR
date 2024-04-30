@@ -10,7 +10,8 @@ import { fetchAPI } from "../../scripts/api"
 const SignIndex = ({ navigation }: any) => {
     const asyncStart = async () => {
         console.debug("asyncStart");
-        checkStorageData();
+        // checkStorageData();
+        clearStorageData();
         const isEnabled = await isAccessEnabledMobilApp();
         if (!isEnabled) {
             await showAlertMobilApp();
@@ -25,9 +26,20 @@ const SignIndex = ({ navigation }: any) => {
         }, [])
     );
 
+    const clearStorageData = async () =>{
+        try {
+            const keys = await AsyncStorage.getAllKeys(); 
+            await AsyncStorage.multiRemove(keys); 
+            console.log('Tüm veriler sıfırlandı.');
+          } catch (error) {
+            console.error('Veri sıfırlama hatası:', error);
+          }
+    }
+
     const checkStorageData = async () =>{
         if (!(await AsyncStorage.getItem("AddressID"))) await AsyncStorage.setItem("AddressID","-1")
         if (!(await AsyncStorage.getItem("Token"))) await AsyncStorage.setItem("Token","e7697428-0480-11ef-aaba-287f07a526cf")
+        
     }
 
     const showAlertMobilApp = async () => {

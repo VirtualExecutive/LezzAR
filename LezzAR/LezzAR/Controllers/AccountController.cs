@@ -17,14 +17,7 @@ namespace LezzAR.Controllers
             _context = context;
             _logger = logger;
         }
-        //// GET: api/account/
-        //[HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
 
-        // GET api/<ValuesController>/5
         [HttpGet("GetUserAddresses")]
         public async Task<IActionResult> GetAddress(Guid? token)
         {

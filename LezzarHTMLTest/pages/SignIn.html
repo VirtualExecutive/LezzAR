@@ -11,22 +11,22 @@
             <a id="Sign">LezzAR</a>
             <div class="centerDivContent heightAuto">
                 <div id="emailContainer" class="centerDivSelf">
-                    <label for="phone">E-Mailinizi Giriniz:</label>
+                    <label for="email">E-Mailinizi Giriniz:</label>
                         <br>
                         <input type="email" id="email" name="email">
                         <br>
-                        <button  type="submit" onclick="savePhoneAndRedirect()">Gönder</button>
+                        <button  type="submit" onclick="saveEmailAndRedirect()">Gönder</button>
                     </div>
                 </div>
             </div>
         </div>
         <script>
-            function savePhoneAndRedirect(){
-                var phone = document.getElementById("email").value;
+            function saveEmailAndRedirect(){
+                var email = document.getElementById("email").value;
 
-                localStorage.setItem("email",phone);
+                localStorage.setItem("email",email);
 
-                window.location.href = "Home.html"
+                window.location.href = "SignInVerify.html"
             }
         </script>
     </body>

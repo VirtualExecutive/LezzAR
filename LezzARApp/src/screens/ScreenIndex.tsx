@@ -8,6 +8,8 @@ import * as Linking from "expo-linking";
 
 import SignScreen from "./SignScreen/SignIndex"
 import SignPhoneScreen from "./SignPhoneScreen/SignPhoneIndex"
+import SignInScreen from './SignInScreen/SignInIndex';
+import SignInVerifyScreen from './SignInVerifyScreen/SignInVerifyIndex';
 import HomeScreen from './HomeScreen/HomeIndex';
 import AddressScreen from './AddressScreen/AddressIndex';
 import AddressAddScreen from './AddressAddScreen/AddressIndex';
@@ -48,6 +50,8 @@ function Screen() {
                 <Stack.Navigator initialRouteName="Sign">
                     <Stack.Screen name="Sign" component={SignScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="SignPhone" component={SignPhoneScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="SignIn" component={SignInScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="SignInVerify" component={SignInVerifyScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Address" component={AddressScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="AddressAdd" component={AddressAddScreen} options={{ headerShown: false }} />

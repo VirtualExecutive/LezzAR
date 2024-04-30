@@ -14,8 +14,17 @@
                 <br>
                 <input type="tel" id="phone" name="phone" placeholder="+90 (500) 000 00 00">
                 <br>
-                <button type="submit">Gönder</button>
+                <button type="submit" onclick="savePhoneAndRedirect()" >Gönder</button>
             </div>
         </div>
     </div>
+    <script>
+        function savePhoneAndRedirect() {
+            var phone = document.getElementById("phone").value;
+
+            localStorage.setItem("phone", phone);
+
+            window.location.href = "/SignIn"
+        }
+    </script>
 </body>

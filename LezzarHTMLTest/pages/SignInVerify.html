@@ -7,9 +7,106 @@
     <link rel="stylesheet" href="/css/site.css">
     <link rel="stylesheet" href="/css/centerDiv.css">
     <link rel="stylesheet" href="/css/SignInVerify.css">
-
 </head>
-<body>
-    
+<body class="centerDivContent heightVH">
+    <div style="flex-direction: column;">
+        <a id="Sign">LezzAR</a>
+        <div class="centerDivContent heightAuto">
+            <div id="emailVerifyContainer" class="centerDivSelf">
+                <label for="emailVerifyCode">E-Mailinizi doğrulayınız:</label>
+                    <br>
+                    <input type="text" id="emailVerifyCode" name="emailVerifyCode">
+                    <br>
+                    <div style="flex-direction: row; display: flex;">
+                        <button  id="SendCodeButton" onclick="SendVerifyCode()" >Kodu Gönder</button>
+                        <button  id="VerifyButton" type="submit" onclick="checkCodeAndRedirect()">Doğrula</button>
+                    </div>
+                    <br>
+                    <span id="countdown"></span>
+                    <br>
+                    <a id="info"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkCodeAndRedirect(){
+            var email = localStorage.getItem("email");
+            var code = document.getElementById("emailVerifyCode").value.trim();
+            var info = document.getElementById("info")
+            info.innerHTML="";
+            
+            // Check if the code is empty or not numeric
+            if (code === "") {
+                info.innerHTML = "Kod alanı boş olamaz.";
+                return; // Exit the function
+            } else if (!/^\d+$/.test(code)) { // Regex to check if code is only digits
+                info.innerHTML = "Kod yalnızca rakamlardan oluşmalıdır.";
+                return; // Exit the function
+            }
+            
+            fetch(`https://lezzar.store/api/verify/email/${email}/${code}`)
+            .then(response => response.json())
+            .then(data => {
+                // Sunucudan gelen yanıtı kontrol et
+                if (data.result == true) {
+                    // Doğrulama başarılı ise SignInVerify.html sayfasına yönlendir
+                    window.location.href = "Home.html";
+                } else {
+                    // Doğrulama başarısız ise kullanıcıya bir hata mesajı göster
+                    info.innerHTML="Doğrulama kodunuzu yanlış girdiniz.";
+                }
+            })
+            .catch(error => {
+                // Hata durumunda kullanıcıya bir hata mesajı göster
+                console.error("API isteği sırasında bir hata oluştu:", error);
+                info.innerHTML="Bilinmeyen hata oluştu.";
+            });
+        }
+    </script>
+    <script>
+        
+        function SendVerifyCode(){
+            var button = document.getElementById("SendCodeButton");
+            var countdown = document.getElementById("countdown");
+            var info = document.getElementById("info")
+
+            info.innerHTML="";
+
+            // Butonu devre dışı bırak
+            button.disabled = true;
+
+            // Sayaç başlat
+            var timeLeft = 60; // Sayaç için süre (saniye cinsinden)
+            countdown.innerText = "Yeni kod için " + timeLeft + " saniye sonra denebilirsiniz.";
+
+            var timerId = setInterval(function() {
+                timeLeft--;
+                countdown.innerText = "Yeni kod için " + timeLeft + " saniye sonra deneyiniz.";
+                if (timeLeft <= 0) {
+                    clearInterval(timerId);
+                    countdown.innerText = ""; // Sayaç bitince metni temizle
+                    button.disabled = false; // Butonu tekrar etkinleştir
+                }
+            }, 1000);
+            
+            
+            // API isteği
+            var email = localStorage.getItem("email");
+            info.innerHTML=`${email} hesabınıza doğrulama kodu gönderildi.`
+            fetch(`https://lezzar.store/api/verify/email/${email}`)
+            .then(response => response)
+            .then(data => {
+                // Burada işlem sonucuna göre ek işlemler yapılabilir
+            })
+            .catch(error => {
+                console.error("API isteği sırasında bir hata oluştu:", error);
+                // alert("API isteği sırasında bir hata oluştu.");
+                clearInterval(timerId); // Hata durumunda sayacı durdur
+                countdown.innerText = "";
+                button.disabled = false; // Butonu tekrar etkinleştir
+            });
+        }
+    </script>
 </body>
 </html>

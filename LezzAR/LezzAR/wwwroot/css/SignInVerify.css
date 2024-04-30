@@ -1,0 +1,84 @@
+
+body {
+    background-color: #f33;
+}
+
+#emailVerifyContainer {
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+    #emailVerifyContainer > label {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #emailVerifyContainer > input {
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 7px;
+        border: 0 solid white;
+        border-bottom: 2px solid red;
+    }
+
+        #emailVerifyContainer > input:focus {
+            outline: none;
+        }
+
+    #emailVerifyContainer > div > button {
+        transition: box-shadow 0.3s ease;
+        font-weight: 700;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        border: 0px solid white;
+        border-radius: 5px;
+        color: white;
+    }
+
+
+#Sign {
+    color: white;
+    font-size: 128px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+
+#emailVerifyContainer {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+    #emailVerifyContainer:hover, #emailVerifyContainer:focus {
+        box-shadow: 16px 20px 5px rgba(0, 0, 0, 0.3);
+    }
+
+#emailVerifyContainer {
+    background-color: white;
+}
+
+#SendCodeButton {
+    background-color: #44f;
+}
+
+    #SendCodeButton:hover {
+        background-color: #00f;
+    }
+
+#VerifyButton {
+    background-color: #f44;
+}
+
+    #VerifyButton:hover {
+        background-color: #f00;
+    }
+
+#SendCodeButton:disabled {
+    background-color: grey;
+}

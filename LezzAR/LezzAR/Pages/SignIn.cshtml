@@ -1,0 +1,32 @@
+﻿@page
+@model LezzAR.Pages.SignInModel
+@{
+
+	<link rel="stylesheet" href="/css/centerDiv.css">
+	<link rel="stylesheet" href="/css/SignIn.css">
+}
+
+<body class="centerDivContent heightVH">
+    <div style="flex-direction: column;">
+        <a id="Sign">LezzAR</a>
+        <div class="centerDivContent heightAuto">
+            <div id="emailContainer" class="centerDivSelf">
+                <label for="email">E-Mailinizi Giriniz:</label>
+                <br>
+                <input type="email" id="email" name="email">
+                <br>
+                <button type="submit" onclick="saveEmailAndRedirect()">Gönder</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function saveEmailAndRedirect() {
+            var email = document.getElementById("email").value;
+
+            localStorage.setItem("email", email);
+
+            window.location.href = "SignInVerify.html"
+        }
+    </script>
+</body>
