@@ -10,13 +10,13 @@ import { fetchAPI } from "../../scripts/api"
 const SignIndex = ({ navigation }: any) => {
     const asyncStart = async () => {
         console.debug("asyncStart");
-        // checkStorageData();
-        clearStorageData();
+        // clearStorageData();
+        checkStorageData();
         const isEnabled = await isAccessEnabledMobilApp();
         if (!isEnabled) {
             await showAlertMobilApp();
         } else {
-            await navigateSignPhoneScreen();
+            await checkLoading();
         }
     };
 
@@ -38,7 +38,6 @@ const SignIndex = ({ navigation }: any) => {
 
     const checkStorageData = async () =>{
         if (!(await AsyncStorage.getItem("AddressID"))) await AsyncStorage.setItem("AddressID","-1")
-        if (!(await AsyncStorage.getItem("Token"))) await AsyncStorage.setItem("Token","e7697428-0480-11ef-aaba-287f07a526cf")
         
     }
 
@@ -58,24 +57,24 @@ const SignIndex = ({ navigation }: any) => {
     };
 
     const isAccessEnabledMobilApp = async () => {
-        const data = await fetchAPI("accessControl/MobilApp");
+        const data = (await fetchAPI("accessControl/MobilApp")).data;
         console.log("AccessControl/MobilApp: " + data.state);
         return data.state;
     };
 
-    const navigateSignPhoneScreen = async () => {
-        console.log("Navigating SignPhoneScreen");
-        const loadPhoneNumber = async () => {
-            const savedPhoneNumber = await AsyncStorage.getItem('phoneNumber');
-            if (savedPhoneNumber) {
-                console.log(`Telefon numarası: ${savedPhoneNumber}`);
+    const checkLoading = async () => {
+
+        const loadToken = async () => {
+            const savedToken = await AsyncStorage.getItem('Token');
+            if (savedToken) {
+                console.log(`Token: ${savedToken}`);
                 navigation.navigate("Home");
             } else {
                 navigation.navigate("SignPhone");
             }
         };
 
-        loadPhoneNumber();
+        loadToken();
     };
 
     return (

@@ -30,8 +30,15 @@ const SignInIndex = ({ navigation }: any) => {
             Alert.alert("Geçersiz E-mail Adresi", "Girdiğiniz E-mail adresiniz geçersizdir.");
             return;
         }
-        await AsyncStorage.setItem("email",viewMail)
-        navigation.navigate("SignInVerify")
+
+        var result = await fetchAPI(`verify/email/${viewMail}`);
+
+
+        if(result.status == 200){
+            await AsyncStorage.setItem("Email",viewMail)
+            navigation.navigate("SignInVerify")
+        }
+
 
     };
 

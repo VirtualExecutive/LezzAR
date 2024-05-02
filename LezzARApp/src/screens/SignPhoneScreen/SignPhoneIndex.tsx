@@ -4,7 +4,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import ScreenStyles from "../styles"
 import SignPhoneStyles from "./styles"
-import { fetchAPI } from "../../scripts/api"
 import { getFormatPhone } from '../../scripts/formatPhone';
 
 const SignPhoneIndex = ({ navigation }: any) => {
@@ -58,7 +57,7 @@ const SignPhoneIndex = ({ navigation }: any) => {
                 text: "İptal",
                 style: "cancel"
             },
-            { text: "Onayla", onPress: async () => {await AsyncStorage.setItem('phoneNumber', viewPhoneNumber);navigation.navigate("SignIn")}}
+            { text: "Onayla", onPress: async () => {await AsyncStorage.setItem('PhoneNumber', viewPhoneNumber);navigation.navigate("SignIn")}}
             ],
             { cancelable: false }
         );

@@ -30,7 +30,19 @@ const  AddressIndex = ({navigation}:any) => {
     const loadAddresses = async () => {
         const token = await AsyncStorage.getItem("Token");
         const response = await fetchAPI(`account/getuseraddresses?token=${token}`)
-        setAddresses(response)
+        try{
+            try{
+                response.data.map(()=>{})
+                setAddresses(response.data)
+            }
+            catch(error){
+                setAddresses([])
+            }
+        }
+        catch(error)
+        {
+            console.error(error);
+        }
     };
 
     useFocusEffect(

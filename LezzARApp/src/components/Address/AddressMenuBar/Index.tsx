@@ -39,21 +39,40 @@ function index({navigation}:any) {
         }
         
         if(addressID!="-1"){
-            let addresses: Address[] =  await fetchAPI(`account/getuseraddresses?token=${token}`)
-            addresses.forEach((element: Address) => {
-                if(element.addressID==parseInt(addressID)){
-                    console.log(`${element.sehir} ${element.ilce} ${element.mahalle} ${element.caddeSokak} ${element.binaNo} ${element.binaAdi} ${element.title} ${element.adresTarifi} ${element.enlem} ${element.boylam}`)
-                    setTitle(element.title)
-                    setInfo(`${element.sehir}, ${element.ilce}, ${element.mahalle}, ${element.caddeSokak}, ${element.binaAdi} No:${element.binaNo}`)
-                    setID(element.addressID.toString())
+            let result  =  await fetchAPI(`account/getuseraddresses?token=${token}`);
+            let addresses = result.data; 
+            let found = false 
+            try{
+                if(result.status ==200){
+
+                    addresses.forEach((element: Address) => {
+                        if(element.addressID==parseInt(addressID)){
+                            console.log(`${element.sehir} ${element.ilce} ${element.mahalle} ${element.caddeSokak} ${element.binaNo} ${element.binaAdi} ${element.title} ${element.adresTarifi} ${element.enlem} ${element.boylam}`)
+                            setTitle(element.title)
+                            setInfo(`${element.sehir}, ${element.ilce}, ${element.mahalle}, ${element.caddeSokak}, ${element.binaAdi} No:${element.binaNo}`)
+                            setID(element.addressID.toString())
+                            found = true;
+                        }
+                    });
                 }
-            });
+            }
+            catch (error){
+                console.error(error);
+                await AsyncStorage.setItem("AddressID","-1")
+            }
+
+            if ( found ==false){
+                setTitle("Adres Ekle")
+                setInfo("Türkiye")
+                setID("-1")
+                await AsyncStorage.setItem("AddressID","-1")
+            }
         }
         else{
             setTitle("Adres Ekle")
             setInfo("Türkiye")
             setID("-1")
-            await AsyncStorage.setItem("AddressID","0")
+            await AsyncStorage.setItem("AddressID","-1")
         }
     }
 

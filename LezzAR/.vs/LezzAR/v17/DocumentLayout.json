@@ -3,127 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\controllers\\verifycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\controllers\\verifycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\wwwroot\\css\\signin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\wwwroot\\css\\signin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\wwwroot\\css\\signinverify.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\wwwroot\\css\\signinverify.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\signinverify.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\signinverify.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\signin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\signin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\signinverify.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\signinverify.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\signphone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\signphone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\wwwroot\\css\\signphone.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\wwwroot\\css\\signphone.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yusuf\\AppData\\Local\\Temp\\.vsdbgsrc\\df0d79488b82b7d0c2b7c06956fc12c6b50180de436a9def7c5621866be04865\\FileConfigurationProvider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\serverstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\serverstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\verificationcodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\verificationcodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\controllers\\accesscontrolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\controllers\\accesscontrolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\classes\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\classes\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\accesscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\accesscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\addresses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\addresses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\model\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\model\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\wwwroot\\css\\centerdiv.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\wwwroot\\css\\centerdiv.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\signphone.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\signphone.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|c:\\users\\yusuf\\onedrive\\belgeler\\github\\lezzar\\lezzar\\lezzar\\controllers\\verifycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E74B00D-898E-4884-A4AB-BC86ED826562}|LezzAR\\LezzAR.csproj|solutionrelative:lezzar\\controllers\\verifycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -133,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -141,384 +30,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "LezzAR\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T16:21:01.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SignIn.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignIn.cshtml.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\SignIn.cshtml.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignIn.cshtml.cs",
-              "RelativeToolTip": "LezzAR\\Pages\\SignIn.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T16:19:38.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SignInVerify.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignInVerify.cshtml.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\SignInVerify.cshtml.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignInVerify.cshtml.cs",
-              "RelativeToolTip": "LezzAR\\Pages\\SignInVerify.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T16:19:36.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SignInVerify.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignInVerify.cshtml",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\SignInVerify.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignInVerify.cshtml",
-              "RelativeToolTip": "LezzAR\\Pages\\SignInVerify.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T16:03:40.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SignInVerify.css",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\SignInVerify.css",
-              "RelativeDocumentMoniker": "LezzAR\\wwwroot\\css\\SignInVerify.css",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\SignInVerify.css",
-              "RelativeToolTip": "LezzAR\\wwwroot\\css\\SignInVerify.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-30T16:01:52.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FileConfigurationProvider.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\AppData\\Local\\Temp\\.vsdbgsrc\\df0d79488b82b7d0c2b7c06956fc12c6b50180de436a9def7c5621866be04865\\FileConfigurationProvider.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\df0d79488b82b7d0c2b7c06956fc12c6b50180de436a9def7c5621866be04865\\FileConfigurationProvider.cs",
-              "ToolTip": "C:\\Users\\yusuf\\AppData\\Local\\Temp\\.vsdbgsrc\\df0d79488b82b7d0c2b7c06956fc12c6b50180de436a9def7c5621866be04865\\FileConfigurationProvider.cs[Salt Okunur]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\df0d79488b82b7d0c2b7c06956fc12c6b50180de436a9def7c5621866be04865\\FileConfigurationProvider.cs[Salt Okunur]",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAlwEUAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T14:19:01.126Z",
-              "EditorCaption": "[Salt Okunur]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Email.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Classes\\Email.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Classes\\Email.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Classes\\Email.cs",
-              "RelativeToolTip": "LezzAR\\Classes\\Email.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:31:28.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "VerificationCodes.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\VerificationCodes.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Model\\VerificationCodes.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\VerificationCodes.cs",
-              "RelativeToolTip": "LezzAR\\Model\\VerificationCodes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T11:16:16.652Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VerifyController.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\VerifyController.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Controllers\\VerifyController.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\VerifyController.cs",
-              "RelativeToolTip": "LezzAR\\Controllers\\VerifyController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDYAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T10:41:16.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ServerStatus.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\ServerStatus.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Model\\ServerStatus.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\ServerStatus.cs",
-              "RelativeToolTip": "LezzAR\\Model\\ServerStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T10:30:17.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SignIn.css",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\SignIn.css",
-              "RelativeDocumentMoniker": "LezzAR\\wwwroot\\css\\SignIn.css",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\SignIn.css",
-              "RelativeToolTip": "LezzAR\\wwwroot\\css\\SignIn.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-28T16:24:39.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SignIn.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignIn.cshtml",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\SignIn.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignIn.cshtml",
-              "RelativeToolTip": "LezzAR\\Pages\\SignIn.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T16:23:53.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\appsettings.json",
-              "RelativeDocumentMoniker": "LezzAR\\appsettings.json",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\appsettings.json",
-              "RelativeToolTip": "LezzAR\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-28T15:14:23.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SignPhone.css",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\SignPhone.css",
-              "RelativeDocumentMoniker": "LezzAR\\wwwroot\\css\\SignPhone.css",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\SignPhone.css",
-              "RelativeToolTip": "LezzAR\\wwwroot\\css\\SignPhone.css",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-28T14:02:03.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "centerDiv.css",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\centerDiv.css",
-              "RelativeDocumentMoniker": "LezzAR\\wwwroot\\css\\centerDiv.css",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\centerDiv.css",
-              "RelativeToolTip": "LezzAR\\wwwroot\\css\\centerDiv.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-28T12:38:49.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "LezzAR\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "LezzAR\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-28T12:34:40.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Error.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Error.cshtml.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\Error.cshtml.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Error.cshtml.cs",
-              "RelativeToolTip": "LezzAR\\Pages\\Error.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T12:03:07.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "SignPhone.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignPhone.cshtml.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\SignPhone.cshtml.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignPhone.cshtml.cs",
-              "RelativeToolTip": "LezzAR\\Pages\\SignPhone.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T12:02:54.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SignPhone.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignPhone.cshtml",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\SignPhone.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\SignPhone.cshtml",
-              "RelativeToolTip": "LezzAR\\Pages\\SignPhone.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T12:02:51.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "LezzAR\\Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T12:02:19.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Privacy.cshtml",
-              "RelativeToolTip": "LezzAR\\Pages\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T12:00:08.212Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Error.cshtml",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\Error.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Error.cshtml",
-              "RelativeToolTip": "LezzAR\\Pages\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T12:00:04.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "LezzAR\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Pages\\Index.cshtml",
-              "RelativeToolTip": "LezzAR\\Pages\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T11:58:52.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AddressController.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\AddressController.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Controllers\\AddressController.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\AddressController.cs",
-              "RelativeToolTip": "LezzAR\\Controllers\\AddressController.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAD4vxsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T12:25:09.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Addresses.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\Addresses.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Model\\Addresses.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\Addresses.cs",
-              "RelativeToolTip": "LezzAR\\Model\\Addresses.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T12:24:01.112Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Program.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Program.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Program.cs",
-              "RelativeToolTip": "LezzAR\\Program.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T12:18:47.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "LezzAR\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\AccountController.cs",
               "RelativeToolTip": "LezzAR\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowDAAAABGAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAYwCQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T10:36:33.347Z"
+              "WhenOpened": "2024-05-02T16:45:55.211Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 1,
               "Title": "Accounts.cs",
               "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\Accounts.cs",
               "RelativeDocumentMoniker": "LezzAR\\Model\\Accounts.cs",
               "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\Accounts.cs",
               "RelativeToolTip": "LezzAR\\Model\\Accounts.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T10:18:59.513Z"
+              "WhenOpened": "2024-05-02T15:45:47.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AccessControlController.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\AccessControlController.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Controllers\\AccessControlController.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\AccessControlController.cs",
-              "RelativeToolTip": "LezzAR\\Controllers\\AccessControlController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAoAAAA",
+              "DocumentIndex": 2,
+              "Title": "VerifyController.cs",
+              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\VerifyController.cs",
+              "RelativeDocumentMoniker": "LezzAR\\Controllers\\VerifyController.cs",
+              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Controllers\\VerifyController.cs",
+              "RelativeToolTip": "LezzAR\\Controllers\\VerifyController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAwwF0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T13:37:11.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AccessControl.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AccessControl.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Model\\AccessControl.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AccessControl.cs",
-              "RelativeToolTip": "LezzAR\\Model\\AccessControl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T13:37:06.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "LezzAR\\Model\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\yusuf\\OneDrive\\Belgeler\\GitHub\\LezzAR\\LezzAR\\LezzAR\\Model\\AppDbContext.cs",
-              "RelativeToolTip": "LezzAR\\Model\\AppDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T13:36:59.063Z"
+              "WhenOpened": "2024-05-02T15:16:27.516Z"
             }
           ]
         }

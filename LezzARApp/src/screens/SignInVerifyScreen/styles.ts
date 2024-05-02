@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: "#22F",  
         borderRadius: 5,
-        marginTop: 12,
+        marginTop: 12
     },
     buttonRed: {
         width: "45%", 
@@ -42,6 +42,11 @@ const styles = StyleSheet.create({
         flexDirection:"row",
         display:"flex",
         justifyContent: "space-between",
+    },
+    loadingText:{
+        fontFamily:"Rubik-Bold",
+        fontSize:24,
+        color:"#f44"
     }
 });
 

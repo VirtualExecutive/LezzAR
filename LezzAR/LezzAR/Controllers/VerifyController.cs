@@ -21,40 +21,43 @@ namespace LezzAR.Controllers
         }
 
         [HttpGet("email/{email}")]
-        public async Task<IActionResult> AskVerifyMail(string email)
+        public async Task<IActionResult> RequestVerifyMail(string email)
         {
+            var oneMinutesLimit = 1;
+            var oneHoursLimit = 60;
             try
             {
-                var verificationCodes = _context.VerificationCodes
+                var verificationCodesOneHours = _context.VerificationCodes
                     .Where(vc => vc.Email == email && vc.CreatedAt >= DateTime.UtcNow.AddHours(-1))
                     .ToList();
+                var verificationCodesOneMinutes = _context.VerificationCodes
+                    .Where(vc => vc.Email == email && vc.CreatedAt >= DateTime.UtcNow.AddMinutes(-1))
+                    .ToList();
 
-                // Kullanıcının son bir saat içinde yaptığı doğrulama kodu istek sayısını kontrol et
-                if (verificationCodes.Count < 60)
+                if (verificationCodesOneMinutes.Count >= oneMinutesLimit)
                 {
-                    // Yeni bir doğrulama kodu oluştur
+                    return BadRequest($"Güvenlik nedeniyle bir dakika içinde sadece {oneMinutesLimit} kez doğrulama kodu isteyebilirsiniz.");
+                }
+                else if(verificationCodesOneHours.Count > oneHoursLimit)
+                {
+                    return BadRequest($"Güvenlik nedeniyle bir saat içinde sadece {oneHoursLimit} kez doğrulama kodu isteyebilirsiniz.");
+                }
+                else
+                {
                     string verificationCode = GenerateVerificationCode();
 
-                    // Oluşturulan doğrulama kodunu veritabanına kaydet
                     _context.VerificationCodes.Add(new VerificationCodes { Email = email, VerificationCode = verificationCode, CreatedAt = DateTime.UtcNow });
                     await _context.SaveChangesAsync();
 
 
-                    this.SendEmail(email,"LezzAR - Doğrulama kodu",$"LezzAR<br>Doğrulama kodunuz: {verificationCode}");
+                    this.SendEmail(email, "LezzAR - Doğrulama kodu", $"LezzAR<br>Doğrulama kodunuz: {verificationCode}");
 
-
-                    // Doğrulama kodunu gönder
                     return Ok("Doğrulama kodu gönderildi.");
                 }
-                else
-                {
-                    // Güvenlik nedeniyle bir saat içinde sadece üç kez doğrulama kodu isteyebileceğini belirt
-                    return BadRequest("Güvenlik nedeniyle bir saat içinde sadece üç kez doğrulama kodu isteyebilirsiniz.");
-                }
             }
-            catch (FormatException ex){
+            catch (FormatException){
 
-                return StatusCode(500, "Geçersiz e-mail formatı.");
+                return BadRequest("Geçersiz e-mail formatı.");
             }
             catch (Exception ex)
             {
@@ -64,20 +67,45 @@ namespace LezzAR.Controllers
         }
 
         [HttpGet("email/{email}/{code}")]
-        public async Task<IActionResult> GetVerifyMail(string email, string code)
+        public IActionResult GetVerifyMail(string email, string code)
         {
             try
             {
-                string verificationCodeTrue = _context.VerificationCodes.Where(x=>x.Email == email).OrderByDescending(x => x.CreatedAt).FirstOrDefault().VerificationCode;
+                if (email != null && code != null)
+                {
+                    var verificationCodeTrue = _context.VerificationCodes
+                        .Where(x => x.Email == email).OrderByDescending(x => x.CreatedAt).ToList()[0].VerificationCode;
 
-                if (code == verificationCodeTrue)
-                {
-                    return Ok(new { result = true });
+                    var verificationCodeTrueFiveMinutes = _context.VerificationCodes
+                       .Where(x => x.Email == email && x.CreatedAt >= DateTime.UtcNow.AddMinutes(-5))
+                       .OrderByDescending(x => x.CreatedAt)
+                       .ToList();
+
+                    if( verificationCodeTrueFiveMinutes.Count ==0) 
+                    {
+                        return BadRequest("Doğrulama kodunuz zaman aşımına uğradı.");
+                    }
+
+
+                    if (code == verificationCodeTrue)
+                    {
+                        var account = _context.Accounts
+                            .Where(ac => ac.Email == email).ToList();
+                        if (account.Count == 0) 
+                        {
+                            return Ok(new {result=true, token=""});
+                        }
+                        else
+                        {
+                            return Ok(new { result = true, token = account[0].Token });
+                        }
+                    }
+                    else
+                    {
+                        return Ok(new { result = false });
+                    }
                 }
-                else 
-                {
-                    return Ok(new { result = false }); 
-                }
+                return BadRequest("Eksik parametreler.");
             }
             catch (Exception ex)
             {

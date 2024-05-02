@@ -27,10 +27,6 @@ namespace LezzAR.Controllers
                                            .Where(a => a.Token == token )
                                            .Select(a => a.AccountID)
                                            .FirstOrDefaultAsync();
-                if (accountID == 0)
-                {
-                    return NotFound("No user found with the provided token.");
-                }
 
                 var addresses = await _context.Addresses
                               .Where(a => a.AccountID == accountID)
@@ -38,7 +34,7 @@ namespace LezzAR.Controllers
 
                 if (addresses == null || addresses.Count == 0)
                 {
-                    return NotFound("No addresses found for the user.");
+                    return Ok(new List<Addresses>());
                 }
 
 
@@ -50,6 +46,8 @@ namespace LezzAR.Controllers
                 return StatusCode(500,ex.ToString());
             }
         }
+
+        
 
     }
 }
