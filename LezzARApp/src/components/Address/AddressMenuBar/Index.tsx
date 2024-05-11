@@ -24,6 +24,21 @@ interface Address {
     boylam: number;
 }
 
+interface LocalAddress {
+    addressID: number;
+    sehir: string;
+    ilce: string;
+    mahalle: string;
+    caddeSokak: string;
+    kat:string;
+    binaNo: string;
+    binaAdi: string;
+    adresTarifi: string;
+    title: string;
+    enlem: number;
+    boylam: number;
+}
+
 function index({navigation}:any) {
     const [title, setTitle] = useState("")
     const [info, setInfo] = useState("")
@@ -34,34 +49,37 @@ function index({navigation}:any) {
         const token = await AsyncStorage.getItem("Token");
 
         if (!addressID) {
-            console.error("AddressID is null");
-            return; 
+            await AsyncStorage.setItem("AddressID","-1");
         }
-        
-        if(addressID!="-1"){
-            let result  =  await fetchAPI(`account/getuseraddresses?token=${token}`);
-            let addresses = result.data; 
-            let found = false 
-            try{
-                if(result.status ==200){
 
-                    addresses.forEach((element: Address) => {
-                        if(element.addressID==parseInt(addressID)){
-                            console.log(`${element.sehir} ${element.ilce} ${element.mahalle} ${element.caddeSokak} ${element.binaNo} ${element.binaAdi} ${element.title} ${element.adresTarifi} ${element.enlem} ${element.boylam}`)
-                            setTitle(element.title)
-                            setInfo(`${element.sehir}, ${element.ilce}, ${element.mahalle}, ${element.caddeSokak}, ${element.binaAdi} No:${element.binaNo}`)
-                            setID(element.addressID.toString())
-                            found = true;
-                        }
-                    });
+        if(!addressID){
+            return;
+        }
+
+        if(token){
+            let found = false 
+            if(addressID!="-1"){
+                let result  =  await fetchAPI(`account/getuseraddresses?token=${token}`);
+                let addresses = result.data; 
+                try{
+                    if(result.status ==200){
+    
+                        addresses.forEach((element: Address) => {
+                            if(element.addressID==parseInt(addressID)){
+                                console.log(`${element.sehir} ${element.ilce} ${element.mahalle} ${element.caddeSokak} ${element.binaNo} ${element.binaAdi} ${element.title} ${element.adresTarifi} ${element.enlem} ${element.boylam}`)
+                                setTitle(element.title)
+                                setInfo(`${element.sehir}, ${element.ilce}, ${element.mahalle}, ${element.caddeSokak}, ${element.binaAdi} No:${element.binaNo}`)
+                                setID(element.addressID.toString())
+                                found = true;
+                            }
+                        });
+                    }
+                }
+                catch (error){
+                    await AsyncStorage.setItem("AddressID","-1")
                 }
             }
-            catch (error){
-                console.error(error);
-                await AsyncStorage.setItem("AddressID","-1")
-            }
-
-            if ( found ==false){
+            if (addressID!="-1" || found==false ){
                 setTitle("Adres Ekle")
                 setInfo("Türkiye")
                 setID("-1")
@@ -69,10 +87,26 @@ function index({navigation}:any) {
             }
         }
         else{
-            setTitle("Adres Ekle")
-            setInfo("Türkiye")
-            setID("-1")
-            await AsyncStorage.setItem("AddressID","-1")
+            let localAddresses = await AsyncStorage.getItem("LocalAddresses");
+            let found = false;
+            if (localAddresses){
+                let localAddressesJSON = JSON.parse(localAddresses);
+                localAddressesJSON.forEach((element: LocalAddress)=>{
+                    if(element.addressID==parseInt(addressID)){
+                        console.log(`${element.sehir} ${element.ilce} ${element.mahalle} ${element.caddeSokak} ${element.binaNo} ${element.binaAdi} ${element.title} ${element.adresTarifi} ${element.enlem} ${element.boylam}`)
+                        setTitle(element.title)
+                        setInfo(`${element.sehir}, ${element.ilce}, ${element.mahalle}, ${element.caddeSokak}, ${element.binaAdi} No:${element.binaNo}`)
+                        setID(element.addressID.toString())
+                        found = true;
+                    }
+                })
+            }
+            if (!localAddresses || found ){
+                setTitle("Adres Ekle")
+                setInfo("Türkiye")
+                setID("-1")
+                await AsyncStorage.setItem("AddressID","-1")
+            }
         }
     }
 
@@ -92,7 +126,7 @@ function index({navigation}:any) {
     }
 
     return(
-            <TouchableOpacity style={styles.AddressBox} onPress={onClickPlace}>
+            <TouchableOpacity style={styles.AddressBox} activeOpacity={1}   onPress={onClickPlace}>
                 <Text  style={styles.Title} numberOfLines={1} ellipsizeMode="tail">{title}</Text>
                 <Text  style={styles.AddressInfo}  numberOfLines={1} ellipsizeMode="tail">{info}</Text>
                     <Icon name="place" size={24} color="red" />

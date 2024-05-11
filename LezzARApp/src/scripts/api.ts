@@ -13,7 +13,12 @@ export const fetchAPI = async (endpoint: string): Promise<AxiosResponse<any>> =>
     });
     console.debug(`Url: ${url}`)
     console.debug(`Status: ${response.status}`)
-    console.debug(`Data: ${response.data.toString()}`)
+    try{
+      console.debug(`Data: ${JSON.stringify(response.data)}`)
+    }
+    catch{
+      console.debug(`Data: ${response.data.toString()}`)
+    }
     if (response.status === 200) {
       return response;
     } else if (response.status === 400) {

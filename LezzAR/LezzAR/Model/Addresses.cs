@@ -9,6 +9,9 @@
         public string? Mahalle { get; set; }
         public string? CaddeSokak { get; set; }
         public string? BinaNo { get; set; }
+        public string? Kat { get; set; }
+
+        public string? DaireNo { get; set; }
         public string? BinaAdi { get; set; }
         public string? AdresTarifi { get; set; }
         public string? Title { get; set; }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mail;
 using System.Net;
+using LezzAR.Classes;
 
 namespace LezzAR.Controllers
 {
@@ -67,7 +68,7 @@ namespace LezzAR.Controllers
         }
 
         [HttpGet("email/{email}/{code}")]
-        public IActionResult GetVerifyMail(string email, string code)
+        public async Task<IActionResult> GetVerifyMail(string email, string code)
         {
             try
             {
@@ -87,13 +88,17 @@ namespace LezzAR.Controllers
                     }
 
 
-                    if (code == verificationCodeTrue)
+                    else if (code == verificationCodeTrue)
                     {
                         var account = _context.Accounts
                             .Where(ac => ac.Email == email).ToList();
                         if (account.Count == 0) 
                         {
-                            return Ok(new {result=true, token=""});
+                            //Yeni kayıt
+                            Guid newGuid = Guid.NewGuid();
+                            _context.Accounts.Add(new Accounts { Email = email , Token=newGuid});
+                            await _context.SaveChangesAsync();
+                            return Ok(new {result=true, token=newGuid});
                         }
                         else
                         {

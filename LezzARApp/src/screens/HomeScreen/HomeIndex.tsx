@@ -6,13 +6,18 @@ import styles from "./styles"
 import ColorsTheme from "../../Theme/color"
 import homeTheme from '../../Theme/home'
 import AddressMenuBar from "../../components/Address/AddressMenuBar/Index"
+import Header from "../../components/Header/Index"
 
 
 
 const  HomeIndex = ({navigation}:any) => {
     return(
         <View style={{ flex: 1}}>
-
+            <Header 
+                navigation={navigation}
+                title="LezzAR"
+                isShowProfile={true}
+            />
             <AddressMenuBar navigation={navigation}/>
 
 

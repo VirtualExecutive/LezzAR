@@ -4,7 +4,7 @@
     "description": "Türkiyenin AR yemek sipariş uygulaması",
     "scheme": "lezzar",
     "slug": "LezzARApp",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

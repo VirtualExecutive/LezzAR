@@ -9,6 +9,7 @@ import { getFormatPhone } from '../../scripts/formatPhone';
 
 const SignInIndex = ({ navigation }: any) => {
     const [mail, setMail] = useState(''); 
+    const [isLoading, setIsLoading] = useState(false)
     
     const validateEmail = (email:any) => {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -31,12 +32,14 @@ const SignInIndex = ({ navigation }: any) => {
             return;
         }
 
+        setIsLoading(true);
         var result = await fetchAPI(`verify/email/${viewMail}`);
-
-
+        
+        
         if(result.status == 200){
-            await AsyncStorage.setItem("Email",viewMail)
-            navigation.navigate("SignInVerify")
+            await AsyncStorage.setItem("Email",viewMail);
+            setIsLoading(false);
+            return navigation.navigate("SignInVerify");
         }
 
 
@@ -44,21 +47,29 @@ const SignInIndex = ({ navigation }: any) => {
 
     return (
         <View style={ScreenStyles.center}>
-            {/* <Text style={SignPhoneStyles.headerText} >Telefon Numaranızı Giriniz</Text> */}
-            <TextInput
-                style={SignInStyles.input}
-                placeholder="Email adresinizi giriniz"
-                keyboardType="email-address" 
-                value={mail}
-                onChangeText={setMail} 
-                underlineColorAndroid="transparent"
-            />
-            <TouchableOpacity
-                style={SignInStyles.button}
-                onPress={handleMailSubmit} 
-            >
-                <Text style={SignInStyles.buttonText}>Email Adresimi Doğrula</Text>
-            </TouchableOpacity>
+            {
+                isLoading
+                    ?
+                    <Text style={SignInStyles.loadingText}>Doğrulanıyor</Text>
+                    :
+                    <>
+                    {/* <Text style={SignPhoneStyles.headerText} >Telefon Numaranızı Giriniz</Text> */}
+                    <TextInput
+                    style={SignInStyles.input}
+                    placeholder="Email adresinizi giriniz"
+                    keyboardType="email-address" 
+                    value={mail}
+                    onChangeText={setMail} 
+                    underlineColorAndroid="transparent"
+                    />
+                    <TouchableOpacity
+                    style={SignInStyles.button}
+                    onPress={handleMailSubmit} 
+                    >
+                        <Text style={SignInStyles.buttonText}>Email Adresimi Doğrula</Text>
+                    </TouchableOpacity>
+                </>
+            }
         </View>
 
     )

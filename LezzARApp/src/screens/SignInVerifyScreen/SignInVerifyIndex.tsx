@@ -43,14 +43,11 @@ const SignInVerifyIndex = ({ navigation }: any) => {
         if (result.status == 200) {
             if (result.data.result == false) {
                 Alert.alert("Hatalı Kod", "Girdiğiniz doğrulama kodunuz yanlıştır.")
+                return;
             }
-            else if (result.data.token == "") {
-                navigation.navigate("Home") // TODO
-            }
-            else {
-                await AsyncStorage.setItem("Token", result.data.token)
-                navigation.navigate("Home")
-            }
+            await AsyncStorage.setItem("Token", result.data.token);
+            await AsyncStorage.setItem("Email",email);
+            return navigation.navigate("SignUp");
         }
 
     };

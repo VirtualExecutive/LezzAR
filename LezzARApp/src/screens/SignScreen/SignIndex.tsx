@@ -65,12 +65,28 @@ const SignIndex = ({ navigation }: any) => {
     const checkLoading = async () => {
 
         const loadToken = async () => {
+            const savedPhone = await AsyncStorage.getItem('Phone');
+            const savedEmail = await AsyncStorage.getItem('Email');
             const savedToken = await AsyncStorage.getItem('Token');
-            if (savedToken) {
-                console.log(`Token: ${savedToken}`);
-                navigation.navigate("Home");
-            } else {
+            const savedName = await AsyncStorage.getItem('Name');
+            const savedSurName = await AsyncStorage.getItem('SurName');
+
+            
+
+            if(!savedPhone){
                 navigation.navigate("SignPhone");
+            }
+            else if(!savedEmail){
+                navigation.navigate("SignEmail");
+            }
+            else if(!savedName || !savedSurName){
+                navigation.navigate("SignUp");
+            }
+            else if(!savedToken){
+                navigation.navigate("SignPhone");
+            }
+            else{
+                navigation.navigate("Home")
             }
         };
 

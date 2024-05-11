@@ -19,6 +19,8 @@ const Stack = createStackNavigator();
 const { height } = Dimensions.get('window')
 
 import { ErrorBoundary } from 'react-error-boundary';
+import SignUpScreen from './SignUpScreen/SignUpIndex';
+import AddressEditScreen from './AddressEditScreen/AddressIndex';
 function ErrorFallback({error, resetErrorBoundary}:any) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -52,8 +54,10 @@ function Screen() {
                     <Stack.Screen name="SignPhone" component={SignPhoneScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="SignIn" component={SignInScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="SignInVerify" component={SignInVerifyScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="SignUp" component={SignUpScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Address" component={AddressScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="AddressEdit" component={AddressEditScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="AddressAdd" component={AddressAddScreen} options={{ headerShown: false }} />
                 </Stack.Navigator>
             </NavigationContainer>

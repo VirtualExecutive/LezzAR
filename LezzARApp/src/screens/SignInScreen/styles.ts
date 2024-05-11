@@ -28,6 +28,11 @@ const styles = StyleSheet.create({
         textAlign:"center",
         fontFamily:"Rubik-Bold",
         fontSize:16,
+    },
+    loadingText:{
+        fontFamily:"Rubik-Bold",
+        fontSize:24,
+        color:"#f44"
     }
 });
 

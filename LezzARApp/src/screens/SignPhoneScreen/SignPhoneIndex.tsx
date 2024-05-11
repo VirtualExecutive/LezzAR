@@ -57,7 +57,7 @@ const SignPhoneIndex = ({ navigation }: any) => {
                 text: "İptal",
                 style: "cancel"
             },
-            { text: "Onayla", onPress: async () => {await AsyncStorage.setItem('PhoneNumber', viewPhoneNumber);navigation.navigate("SignIn")}}
+            { text: "Onayla", onPress: async () => {await AsyncStorage.setItem('Phone', viewPhoneNumber);navigation.navigate("SignIn")}}
             ],
             { cancelable: false }
         );
