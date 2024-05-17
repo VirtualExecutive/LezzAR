@@ -1,7 +1,10 @@
-﻿namespace LezzAR.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LezzAR.Models
 {
     public class Accounts
     {
+        [Key]
         public int AccountID { get; set; }
         public string? Email { get; set; }
         public string? Ad { get; set; }

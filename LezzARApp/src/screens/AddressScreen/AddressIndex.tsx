@@ -9,21 +9,6 @@ import { fetchAPI } from '../../scripts/api'
 
 import Header from "../../components/Header/Index";
 
-interface Address {
-    accountID: number;
-    addressID: number;
-    sehir: string;
-    ilce: string;
-    mahalle: string;
-    caddeSokak: string;
-    kat:string;
-    binaNo: string;
-    binaAdi: string;
-    adresTarifi: string;
-    title: string;
-    enlem: number;
-    boylam: number;
-}
 
 const  AddressIndex = ({navigation}:any) => {
     const  [addresses, setAddresses] = useState([])
@@ -67,12 +52,12 @@ const  AddressIndex = ({navigation}:any) => {
             isShowBack={true}
         />
         <ScrollView  style={{ flex: 1}}>
-            {addresses.map((address:Address,index) => (
+            {addresses.map( (address:Address,index) => (
                 <AddressBox
                 key={index}
                 navigation={navigation}
                 title={address.title} 
-                addressInfo={`${address.sehir}, ${address.ilce}\n${address.mahalle}, ${address.caddeSokak}\n${address.binaAdi} No:${address.binaNo}`}
+                addressInfo={address}
                 addressID={address.addressID}/>
                 ))}
 

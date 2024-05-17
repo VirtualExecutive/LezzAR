@@ -6,43 +6,19 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
 import { fetchAPI } from '../../../scripts/api';
+import { GetAddressNames } from '../../../scripts/addressIndex';
 
 
-interface Address {
-    accountID: number;
-    addressID: number;
-    sehir: string;
-    ilce: string;
-    mahalle: string;
-    caddeSokak: string;
-    kat:string;
-    binaNo: string;
-    binaAdi: string;
-    adresTarifi: string;
-    title: string;
-    enlem: number;
-    boylam: number;
-}
 
-interface LocalAddress {
-    addressID: number;
-    sehir: string;
-    ilce: string;
-    mahalle: string;
-    caddeSokak: string;
-    kat:string;
-    binaNo: string;
-    binaAdi: string;
-    adresTarifi: string;
-    title: string;
-    enlem: number;
-    boylam: number;
-}
 
 function index({navigation}:any) {
     const [title, setTitle] = useState("")
     const [info, setInfo] = useState("")
     const [ID, setID] = useState("")
+
+
+
+ 
  
     const SetCurrentAddress = async () => {
         const addressID = await AsyncStorage.getItem("AddressID")
@@ -64,8 +40,14 @@ function index({navigation}:any) {
                 try{
                     if(result.status ==200){
     
-                        addresses.forEach((element: Address) => {
+                        addresses.forEach(async (element: Address) => {
                             if(element.addressID==parseInt(addressID)){
+                                const data = await GetAddressNames(element.sehirID,element.ilceID,element.mahalleID);
+                                if(data){
+                                    element.sehir=data.sehir;
+                                    element.ilce=data.ilce;
+                                    element.mahalle=data.mahalle;
+                                }
                                 console.log(`${element.sehir} ${element.ilce} ${element.mahalle} ${element.caddeSokak} ${element.binaNo} ${element.binaAdi} ${element.title} ${element.adresTarifi} ${element.enlem} ${element.boylam}`)
                                 setTitle(element.title)
                                 setInfo(`${element.sehir}, ${element.ilce}, ${element.mahalle}, ${element.caddeSokak}, ${element.binaAdi} No:${element.binaNo}`)
@@ -91,8 +73,15 @@ function index({navigation}:any) {
             let found = false;
             if (localAddresses){
                 let localAddressesJSON = JSON.parse(localAddresses);
-                localAddressesJSON.forEach((element: LocalAddress)=>{
+                localAddressesJSON.forEach(async (element: LocalAddress)=>{
                     if(element.addressID==parseInt(addressID)){
+                        
+                        const data = await GetAddressNames(element.sehirID,element.ilceID,element.mahalleID);
+                        if(data){
+                            element.sehir=data.sehir;
+                            element.ilce=data.ilce;
+                            element.mahalle=data.mahalle;
+                        }
                         console.log(`${element.sehir} ${element.ilce} ${element.mahalle} ${element.caddeSokak} ${element.binaNo} ${element.binaAdi} ${element.title} ${element.adresTarifi} ${element.enlem} ${element.boylam}`)
                         setTitle(element.title)
                         setInfo(`${element.sehir}, ${element.ilce}, ${element.mahalle}, ${element.caddeSokak}, ${element.binaAdi} No:${element.binaNo}`)

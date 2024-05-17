@@ -9,10 +9,12 @@ import { fetchAPI } from "../../scripts/api"
 
 const SignIndex = ({ navigation }: any) => {
     const asyncStart = async () => {
+        
         console.debug("asyncStart");
         // clearStorageData();
         checkStorageData();
         const isEnabled = await isAccessEnabledMobilApp();
+        console.log("test")
         if (!isEnabled) {
             await showAlertMobilApp();
         } else {
@@ -65,13 +67,18 @@ const SignIndex = ({ navigation }: any) => {
     const checkLoading = async () => {
 
         const loadToken = async () => {
+            const savedAddressesIndex = await AsyncStorage.getItem("AddressIndexs");
+            if (!savedAddressesIndex){
+                const data = (await fetchAPI("address/AddressIndexs")).data;
+                await AsyncStorage.setItem("AddressIndexs",JSON.stringify(data));
+            }
+
+
             const savedPhone = await AsyncStorage.getItem('Phone');
             const savedEmail = await AsyncStorage.getItem('Email');
             const savedToken = await AsyncStorage.getItem('Token');
             const savedName = await AsyncStorage.getItem('Name');
             const savedSurName = await AsyncStorage.getItem('SurName');
-
-            
 
             if(!savedPhone){
                 navigation.navigate("SignPhone");

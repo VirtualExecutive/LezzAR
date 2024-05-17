@@ -16,6 +16,9 @@ import { fetchAPI } from '../../scripts/api';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
+import { GetCities, GetDistricts, GetNeighborhoods } from '../../scripts/addressIndex';
+
+
 
 const  AddressAddIndex = ({navigation}:any) => {
 
@@ -31,19 +34,9 @@ const  AddressAddIndex = ({navigation}:any) => {
     const [adrestarif, setAdresTarifi] = useState("");
 
 
-    const cities = [
-      "Adana", "Adıyaman", "Afyon", "Ağrı", "Amasya", "Ankara", "Antalya", "Artvin",
-      "Aydın", "Balıkesir", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa",
-      "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", "Edirne", "Elazığ",
-      "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkari",
-      "Hatay", "Isparta", "Mersin", "İstanbul", "İzmir", "Kars", "Kastamonu", "Kayseri",
-      "Kırklareli", "Kırşehir", "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa",
-      "Kahramanmaraş", "Mardin", "Muğla", "Muş", "Nevşehir", "Niğde", "Ordu", "Rize",
-      "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas", "Tekirdağ", "Tokat", "Trabzon",
-      "Tunceli", "Şanlıurfa", "Uşak", "Van", "Yozgat", "Zonguldak", "Aksaray", "Bayburt",
-      "Karaman", "Kırıkkale", "Batman", "Şırnak", "Bartın", "Ardahan", "Iğdır", "Yalova",
-      "Karabük", "Kilis", "Osmaniye", "Düzce"
-    ];
+    const [cities,setCities] = useState([{}])
+    const [districts,setDistricts] = useState([{}])
+    const [neighborhoods,setNeighborhoods] = useState([{}])
   
 
     const [location, setLocation] = useState({
@@ -52,11 +45,10 @@ const  AddressAddIndex = ({navigation}:any) => {
         latitudeDelta: 0.0922,
         longitudeDelta: 0.0421,
     });
-    const [errorMsg, setErrorMsg] = useState(null);
 
     const handleConfirmButton = async () => {
         let token = await AsyncStorage.getItem("Token");
-        let result = await fetchAPI(`address/AddUserAddress?token=${token}&sehir=${sehir}&ilce=${ilce}&mahalle=${mahalle}&sokak=${caddesokak}&binano=${binano}&kat=${kat}&daire=${daireno}&binaadi=${binaadi}&title=${title}&adrestarifi=${adrestarif}&enlem=${location.latitude}&boylam=${location.longitude}`)
+        let result = await fetchAPI(`address/AddUserAddress?token=${token}&sehirID=${sehir.id}&ilceID=${ilce.id}&mahalleID=${mahalle.id}&sokak=${caddesokak}&binano=${binano}&kat=${kat}&daire=${daireno}&binaadi=${binaadi}&title=${title}&adrestarifi=${adrestarif}&enlem=${location.latitude}&boylam=${location.longitude}`)
         if ( result.status =200){
             navigation.navigate("Address")
         }
@@ -83,9 +75,46 @@ const  AddressAddIndex = ({navigation}:any) => {
         setLocation(newRegion);
     };
 
+
+    const loadPickers = async () => {
+        const dataCities = await GetCities();
+        setCities(dataCities);
+        const dataDist = await GetDistricts(0);
+        setDistricts(dataDist);
+        const dataNeigh = await GetNeighborhoods(0,0);
+        setNeighborhoods(dataNeigh);
+    }
+
+
+    const selectedCity = async (itemValue:any) => {
+        setSehir(itemValue)
+        const dataDist = await GetDistricts(itemValue.id);
+        setDistricts(dataDist);
+        const dataNeigh = await GetNeighborhoods(itemValue.id,0);
+        setNeighborhoods(dataNeigh);
+    }
+
+    const selectedDistrict = async (itemValue:any) => {
+        try{
+
+            setIlce(itemValue)
+            const dataNeigh = await GetNeighborhoods(sehir.id,itemValue.id);
+            setNeighborhoods(dataNeigh);
+        }
+        catch(e){
+            
+        }
+    }
+
+    const selectedNeighborhood = async ( itemValue:any) =>{
+        setMahalle(itemValue)
+    }
+    
+
     useFocusEffect(
         React.useCallback(() => {
             map();
+            loadPickers();
         },[])
     );
 
@@ -116,9 +145,10 @@ const  AddressAddIndex = ({navigation}:any) => {
                 <View>
                 <Picker
                     selectedValue={sehir}
-                    onValueChange={(itemValue) => setSehir(itemValue)}>
-                    {cities.map((city, index) => (
-                    <Picker.Item key={index} label={city} value={city} />
+                    onValueChange={(itemValue) => selectedCity(itemValue)}
+                    >
+                    {cities.map((city,index) => (
+                        <Picker.Item key={index} label={city.name} value={city} />
                     ))}
                 </Picker>
                 </View>
@@ -127,50 +157,65 @@ const  AddressAddIndex = ({navigation}:any) => {
                 </View>
                 <View style={styles.BoxItem}>
                 <Text style={styles.TitleInput}>İlçe</Text>
-                <TextInput style={styles.TextInput} autoCorrect={false} id="ilce"></TextInput>
+                <Picker
+                    selectedValue={ilce}
+                    onValueChange={(itemValue) => selectedDistrict(itemValue)}
+                    >
+                    {districts.map((district,index) => (
+                        <Picker.Item key={index} label={district.name} value={district} />
+                    ))}
+                </Picker>
                 </View>
             </View>
             <View style={styles.Box}>
                 <View style={styles.BoxItem}>
                 <Text style={styles.TitleInput}>Mahalle</Text>
-                <TextInput style={styles.TextInput} autoCorrect={false} id="mahalle"></TextInput>
+                
+                <Picker
+                    selectedValue={mahalle}
+                    onValueChange={(itemValue) => selectedNeighborhood(itemValue)}
+                    >
+                    {neighborhoods.map((neighborhood,index) => (
+                        <Picker.Item key={index} label={neighborhood.name} value={neighborhood} />
+                    ))}
+                </Picker>
                 </View>
                 <View style={styles.BoxItem}>
-                <Text style={styles.TitleInput}>Cadde&Sokak</Text>
-                <TextInput style={styles.TextInput} autoCorrect={false} id="caddesokak"></TextInput>
+                <Text style={styles.TitleInput} >Cadde&Sokak</Text>
+                <TextInput style={styles.TextInput} autoCorrect={false} id="caddesokak" value={caddesokak} onChangeText={setSokak}></TextInput>
                 </View>
             </View>
             
             <View style={styles.Box}>
                 <View style={styles.BoxItem}>
                 <Text style={styles.TitleInput}>Bina No</Text>
-                <TextInput style={styles.TextInput}  autoCorrect={false} id="binano"></TextInput>
+                <TextInput style={styles.TextInput}  autoCorrect={false} id="binano" value={binano} onChangeText={setBinano}></TextInput>
                 </View>
                 <View style={styles.BoxItem}>
                 <Text style={styles.TitleInput}>Kat</Text>
-                <TextInput style={styles.TextInput}  autoCorrect={false} id="kat"></TextInput>
+                <TextInput style={styles.TextInput}  autoCorrect={false} id="kat" value={kat} onChangeText={setKat}></TextInput>
                 </View>
                 <View style={styles.BoxItem}>
                 <Text style={styles.TitleInput}>Daire No</Text>
-                <TextInput style={styles.TextInput}  autoCorrect={false} id="daireno"></TextInput>
+                <TextInput style={styles.TextInput}  autoCorrect={false} id="daireno" value={daireno} onChangeText={setDaireno}></TextInput>
                 </View>
             </View>
             
             <View style={styles.Box}>
                 <View style={styles.BoxItem}>
                 <Text style={styles.TitleInput}>Bina&Site Adı</Text>
-                <TextInput style={styles.TextInput} autoCorrect={false} id="binaadi"></TextInput>
+                <TextInput style={styles.TextInput} autoCorrect={false} id="binaadi" value={binaadi} onChangeText={setBinaadi}></TextInput>
                 </View>
                 <View style={styles.BoxItem}>
                 <Text style={styles.TitleInput}>{"Adres başlığı"}</Text>
-                <TextInput style={styles.TextInput} autoCorrect={false} id="baslik"></TextInput>
+                <TextInput style={styles.TextInput} autoCorrect={false} id="baslik" value={title} onChangeText={setTitle}></TextInput>
                 </View>
             </View>
 
             <View style={styles.Box}>
                 <View style={styles.BoxItem}>
                 <Text style={styles.TitleInput}>Adres Tarifi</Text>
-                <TextInput style={styles.TextInput} autoCorrect={false} id="adrestarif"></TextInput>
+                <TextInput style={styles.TextInput} autoCorrect={false} id="adrestarif" value={adrestarif} onChangeText={setAdresTarifi}></TextInput>
                 </View>
             </View>
             

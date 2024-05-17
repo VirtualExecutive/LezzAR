@@ -1,12 +1,20 @@
-﻿namespace LezzAR.Models
+﻿using LezzAR.Model;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace LezzAR.Models
 {
     public class Addresses
     {
         public int AccountID { get; set; }
+        [Key]
         public int AddressID { get; set; }
-        public string? Sehir { get; set; }
-        public string? Ilce { get; set; }
-        public string? Mahalle { get; set; }
+
+        public int SehirID { get; set; }
+
+        public int IlceID { get; set; }
+
+        public int MahalleID { get; set; }
         public string? CaddeSokak { get; set; }
         public string? BinaNo { get; set; }
         public string? Kat { get; set; }
@@ -17,5 +25,8 @@
         public string? Title { get; set; }
         public float Enlem { get; set; }
         public float Boylam { get; set; }
+
+
+
     }
 }

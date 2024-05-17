@@ -17,30 +17,11 @@ namespace LezzAR.Controllers
             _context = context;
             _logger = logger;
         }
-        // GET: api/address/
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
 
-        // GET api/<ValuesController>/5
-        [HttpGet("GetAddress")]
-        public async Task<IActionResult> GetAddress(Guid? token)
-        {
-            try
-            {
-                return Ok(true);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error retrieving access data.");
-                return StatusCode(500, ex.ToString());
-            }
-        }
+
 
         [HttpGet("AddUserAddress")]
-        public async Task<IActionResult> AddAddress(Guid? token, string sehir, string ilce, string mahalle, string sokak, string binano, string kat, string daire, string binaadi, string title, string adrestarifi,float enlem, float boylam)
+        public async Task<IActionResult> AddAddress(Guid? token, int sehirID, int ilceID, int mahalleID, string sokak, string binano, string kat, string daire, string binaadi, string title, string adrestarifi,float enlem, float boylam)
         {
             try
             {
@@ -56,9 +37,9 @@ namespace LezzAR.Controllers
                 _context.Addresses.Add(new Addresses
                 {
                     AccountID = accountID,
-                    Sehir = sehir,
-                    Ilce = ilce,
-                    Mahalle = mahalle,
+                    SehirID = sehirID,
+                    IlceID = ilceID,
+                    MahalleID = mahalleID,
                     CaddeSokak = sokak,
                     BinaNo = binano,
                     Kat=kat,
@@ -69,17 +50,53 @@ namespace LezzAR.Controllers
                     Enlem = enlem,
                     Boylam=boylam
                 });
-                if (addresses == null || addresses.Count == 0)
-                {
-                    return Ok(new List<Addresses>());
-                }
+                await _context.SaveChangesAsync();
+                return Ok("Adres eklendi.");
+                
 
-
-                return Ok(addresses);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error retrieving access data.");
+                return StatusCode(500, ex.ToString());
+            }
+        }
+
+        [HttpGet("AddressIndexs")]
+        public async Task<IActionResult> GetAddressIndexs(Guid? token)
+        {
+            try
+            {
+                var cities = await _context.AddressCities.ToListAsync();
+                var districts = await _context.AddressDistrict.ToListAsync();
+                var neighborhoods = await _context.AddressNeighborhood.ToListAsync();
+
+                var result = cities.Select(city => new
+                {
+                    city.ID,
+                    city.Name,
+                    Districts = districts
+                        .Where(d => d.CityID == city.ID)
+                        .Select(district => new
+                        {
+                            district.ID,
+                            district.Name,
+                            Neighborhoods = neighborhoods
+                                .Where(n => n.DistrictID == district.ID)
+                                .Select(neighborhood => new
+                                {
+                                    neighborhood.ID,
+                                    neighborhood.Name
+                                })
+                        })
+                });
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                // Hata günlüğü
+                // _logger.logerror(ex, "error retrieving access data.");
                 return StatusCode(500, ex.ToString());
             }
         }

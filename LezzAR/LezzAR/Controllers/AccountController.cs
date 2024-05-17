@@ -25,13 +25,13 @@ namespace LezzAR.Controllers
             try
             {
                 var accountID = await _context.Accounts
-                                           .Where(a => a.Token == token )
-                                           .Select(a => a.AccountID)
-                                           .FirstOrDefaultAsync();
+                                .Where(a => a.Token == token )
+                                .Select(a => a.AccountID)
+                                .FirstOrDefaultAsync();
 
                 var addresses = await _context.Addresses
-                              .Where(a => a.AccountID == accountID)
-                              .ToListAsync();
+                                .Where(a => a.AccountID == accountID)
+                                .ToListAsync();
 
                 if (addresses == null || addresses.Count == 0)
                 {
@@ -100,7 +100,7 @@ namespace LezzAR.Controllers
         }
 
         [HttpGet("signUp")]
-        public IActionResult SignUp(Guid? token,string name, string surname)
+        public async Task<IActionResult> SignUp(Guid? token,string name, string surname)
         {
             try
             {
@@ -109,7 +109,7 @@ namespace LezzAR.Controllers
                 {
                     account.Ad = name;
                     account.Soyad = surname;
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                     return Ok("Başarıyla değiştirildi.");
                 }
                 else
